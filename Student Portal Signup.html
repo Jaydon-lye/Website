@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Student portal</title>
+    <link rel=icon href=UniLogo.png type=image/png>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_files/studentPortal.css">
+    <script defer type="text/javascript" src="validationStudentPortal.js"></script> <!--defer allows html code to load first before applying js-->
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Registration</h1>
+        <p id="error-message"></p>
+        <form id="form">
+            <div class="input-control">
+                <label for="studentid-input">
+                    <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                </label>
+                <input type="text" name="studentId" id="studentid-input" placeholder="Student ID">
+            </div>
+
+            <div class="input-control">
+                <label for="email-input">
+                    <span>
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                </label>
+
+                <input type="email" name="email" id="email-input" placeholder="Email"> 
+            </div>
+            <div class="input-control" class="password">
+                <label for="password-input">
+                    <span>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                </label>
+
+                <input type="password" name="password" id="password-input" placeholder="Password"> 
+            </div class="input-control">
+            <div>
+                <label for="repeat-password-input">
+                    <span>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                </label>
+                <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password"> 
+            </div>
+            <div>
+                <h6 id="msg">Password strength: <span id="strength"> </span></h6>
+            </div>
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an Account? <a href="Student Portal Login.html" target="_self">Login</a></p>
+    </div>
+
+    <!--Import icon library from Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

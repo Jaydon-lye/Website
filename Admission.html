@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Matrix University</title>
+    <link rel=icon href=Images/UniLogo.jpg type=image/jpg>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_files/admission.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Home Page.html" class="nav-logo">
+                <h2 class="logo-text">Matrix University</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="Home Page.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="About us.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Admission.html" class="nav-link">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Student Portal Login.html" target="_blank" class="nav-link">Student Portal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="admission-section">
+        <h2>Info</h2>
+        <p>At Matrix University, we welcome forward-thinking, curious, and driven individuals who are ready to shape the future. Our admissions process is designed to identify students with strong academic foundations, leadership potential, and a passion for innovation.</p>
+        <br>
+        <h3>Program requirements</h3>
+        <dl>
+            <dt>Completed high school or equivalent qualification (e.g., SPM, STPM, A-Levels, UEC, IGCSE, IB, or national equivalent)</dt>
+            <dt>Minimum of 5 credits including English and Mathematics</dt>
+            <br>
+            <dt>Minimum CGPA or grade:</dt>
+            <dd>STPM: CGPA 2.50 and above with passes in at least two relevant subjects</dd>
+            <dd>A-Levels: At least 2 passes in relevant subjects</dd>
+            <dd>Foundation/Matriculation: Minimum CGPA of 2.00</dd>
+            <br>
+            <dt>English Language Proficiency (for non-native English speakers):</dt>
+            <dd>MUET Band 3 / IELTS 6.0 / TOEFL iBT 78 / Equivalent</dd>
+        </dl>
+        <br>
+        <h3>For Locals</h3>
+        <p>click on this link: <a class="link" href="#">admissionLocal</a></p>
+        <br>
+        <h3>For International</h3>
+        <p>click on this link: <a class="link" href="#">admissionInternational</a></p>
+
+    </section>
+    <br>
+    <div class="container">
+        <form class="form" id="form">
+            <h2>Book a counselling session</h2>
+            <div class="input-control">
+                <label for="name-input"></label>
+                <input type="text" name="name" id="name-input" placeholder="Enter Name" required>
+            </div>
+            <div class="input-control">
+                <label for="email-input"></label>
+                <input type="email" name="email" id="email-input" placeholder="Enter Email" required>
+            </div>
+            <div class="input-control">
+                <label for="number-input"></label>
+                <input type="number" name="number" id="number-input" placeholder="Enter Phone number" required>
+            </div>
+            <div class="input-control">
+                <label for="country-input"></label>
+                <input type="text" name="country" id="country-input" placeholder="Enter Country" required>
+            </div>
+            <div class="input-control">
+                <label for="program-input"></label>
+                <input type="text" name="program" id="program-input" placeholder="Enter Program" required>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <footer class="footer-section">
+        <div class="section-content">
+            <a href="Home Page.html" class="Home">Home</a>   
+            <p class="copyright">@ 2025 Matrix University</p>
+            <div class="social-icons">
+                <a class="social-link" href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a class="social-link" href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="social-link" href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById("form")
+        
+        form.addEventListener("submit", function(event){
+            alert("Form submitted successfully!")
+        })
+    </script>
+
+    <!--Import icon library from Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
